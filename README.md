@@ -169,7 +169,7 @@ parseInt(10.43) // 10 – o restante do número é descartado
 */
 
 /*
->>>>>OBJECT<<<<<<
+>>>>> OBJECTO <<<<<<
 
 O tipo Object é o mais primitivo do 
 JavaScript, através dele outros tipos 
