@@ -17,7 +17,7 @@ document.getElementaryId('container'):
 
 //selecionando um formulário e o botão 
 
-document.getElementsByTagName('forms')[0] getElementsByTagName('button');
+document.getElementsByTagName('forms')[0].getElementsByTagName('button');
 
 
 //Para selecionar uma classe
