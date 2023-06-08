@@ -1,4 +1,4 @@
-console.log("Olá Mundo!");
+//console.log("Olá Mundo!");
 //---------------------------------------------------------------------
 //Retire o /* e */ e o código irá funcionar
 
@@ -14,11 +14,12 @@ console.log(olaMundo);
 //---------------------------------------------------------------------
 
 //Usando == irá comparar o valor de duas expressões
-/*
-let a = 10;
+// Usando 3 iguais o JS irá considerar os tipos de dado.
+//Temos =atribuição ==valor ===valorIgualdade
+/*let a = 10;
 const b = "10";
 
-console.log(a == b);
+console.log(a === b);
 */
 //---------------------------------------------------------------------
 
@@ -56,6 +57,11 @@ const b = "10";
 
 console.log(a == b && typeof b == 'string');//irá dar true
 console.log(a == b && typeof a == 'string');//irá dar false
+
+
+
+console.log(a == b || typeof b == 'string');//irá dar true
+console.log(a == b || typeof a == 'string');//irá dar false
 */
 //---------------------------------------------------------------------
 
@@ -69,6 +75,7 @@ console.log(a == b && typeof a == 'string');
 //---------------------------------------------------------------------
 
 //if
+//Igualdade
 /*
 let cor = "verde";
 
@@ -85,12 +92,15 @@ if (cor === "verde") {
     console.log("pare");
 
 }
+
 */
 //---------------------------------------------------------------------
 
-//for
-/*
-let n = 5;
+//for repetidor 
+
+//i++ soma de um em um
+
+let n = 4;
 
 for (let i = 0; i <= 10; i++) {
 
@@ -98,4 +108,3 @@ for (let i = 0; i <= 10; i++) {
     //console.log(i + " X " + n + " = " + (i * n)); -> Jeito antigo
 
 }
-*/
