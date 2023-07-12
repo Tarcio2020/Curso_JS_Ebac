@@ -15,7 +15,7 @@ function Funcionarios(nome, cargo, salario) {
     //getters retorna 
     //setters atribui 
     this.getSalario = function() {
-        return `O salario de ${this.nome} é ${_salario}`
+        return _salario;
     }
 
     this.setSalario = function(valor) {
@@ -28,7 +28,8 @@ function Funcionarios(nome, cargo, salario) {
 
     this.aumentoSalario = function (){
         const aumento = _salario * 1.10;
-        console.log(aumento);
+        console.log(aumento)
+        _salario = aumento;
     }
 
     this.dizCargo = function() {
@@ -37,10 +38,23 @@ function Funcionarios(nome, cargo, salario) {
 
 //Essa função não tem o nome, então pegamos da função Pessoa//
     Pessoa.call(this, nome);
+
+}
+
+
+    function DevC(nome) {
+        Funcionarios.call(this, nome, "DevC", 20000);
+
+        this.aumentoSalario = function (){
+            const aumentoDevC = this.getSalario() * 2.00;
+            this.setSalario(aumentoDevC)
+        }
+
+
 }
 
 const Funcionarios1 = new Funcionarios ("Maria", 'Dev. Java', 155844854);
-const Funcionarios2 = new Funcionarios ("Tarcio", 'Dev. C#', 20000);
+const Funcionarios2 = new DevC("Tarcio");
 
 
 //console.log(pessoa1);
